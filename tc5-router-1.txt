@@ -32,18 +32,21 @@ hidekeys
 !
 !
 interface GigabitEthernet0/0
+description SRV-9
 no ip address
 shutdown
 duplex auto
 speed auto
 !
 interface GigabitEthernet0/1
+description SRV-9
 no ip address
 shutdown
 duplex auto
 speed auto
 !
 interface GigabitEthernet0/2
+description SRV-1
 no ip address
 shutdown
 duplex auto
