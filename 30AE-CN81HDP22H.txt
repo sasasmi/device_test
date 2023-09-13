@@ -29,6 +29,14 @@ hidekeys
 !
 !
 !
+ip access-list extended fw-out
+ permit tcp 10.51.248.128 0.0.0.127 any established
+ permit tcp any eq 1720 any
+ permit tcp any any eq 1720
+ deny   ip 10.51.248.128 0.0.0.127 10.0.0.0 0.255.255.255
+ deny   ip 192.168.0.0 0.0.0.255 10.0.0.0 0.255.255.255
+ permit ip any any
+
 !
 !
 interface GigabitEthernet0/0
